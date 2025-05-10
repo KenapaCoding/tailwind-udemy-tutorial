@@ -1,0 +1,325 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>TailwindCss</title>
+		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+		</style>
+		<style type="text/tailwindcss">
+			:root{
+			    --my-padding:22.5px;
+			    --my-margin:27.5px;
+
+				--my-opacity:0.67;
+			}
+			@theme {
+			  --color-clifford: #da373d;
+			  --color-hitam-legam: #000;
+
+			  --spacing:3px;
+
+			  --font-oleo: "Oleo Script", serif;
+
+			  --font-weight-extrablack: 1000;
+
+			  --radius-5xl: 3rem;
+
+			  --shadow-3xl: 0 35px 35px rgba(0, 0, 0, 0.25);
+
+			  --animate-wiggle: wiggle 1s ease-in-out infinite;
+
+				@keyframes wiggle {
+					0%,
+					100% {
+					transform: rotate(-3deg);
+					}
+					50% {
+					transform: rotate(3deg);
+					}
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Materi warna Dasar -->
+		<!-- <h1 class="text-3xl font-bold underline text-white  border-cyan-600 border-4 bg-hitam-legam">
+        Hello world!
+    </h1>
+    <h2 class="bg-hitam-legam text-white">ini testing color custom</h2> -->
+
+		<!-- Materi Container -->
+		<!-- <div class="container bg-cyan-500 text-white mx-auto">
+        ini container
+    </div> -->
+
+		<!-- Materi Padding -->
+
+		<!-- <div class="bg-red-500 text-white py-4">padding</div>
+    <div class="bg-red-500 text-white p-[22.5px]">padding arbitary value</div>
+    <div class="bg-blue-500 text-white p-(--my-padding)">padding dari css variable</div>
+    <div class="">padding lagi</div> -->
+
+		<!-- Materi Margin -->
+		<!-- <div class="bg-red-500 text-white m-4">Margin</div>
+     <div class="bg-red-500 text-white m-(--my-margin)">Margin dengan css variable</div>
+     <div class="bg-red-500 text-white m-[27.5px]">Margin dengan arbitary value</div>
+     <div class="bg-red-500 text-white my-4">Margin </div> -->
+
+		<!-- Materi typography -->
+
+		<!-- font-family -->
+		<!-- <div class="font-sans">hello there</div>
+		<div class="font-serif">hello there</div>
+		<div class="font-mono">hello there</div>
+		<div class="font-oleo">hello there</div> -->
+
+		<!-- font-size -->
+		<!-- <div class="text-xs">font-size</div>
+		<div class="text-lg">font-size</div>
+		<div class="text-xl">font-size</div>
+		<div class="text-4xl">font-size</div>
+		<div class="text-[8px]">font size</div> -->
+		<!-- line height -->
+		<!-- <div class="text-base/5">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, a quae
+			assumenda, deleniti consectetur animi ex nemo blanditiis quia quaerat
+			vitae alias beatae provident saepe quas? Nobis esse nostrum aspernatur
+			consectetur perspiciatis tempora, quia hic reprehenderit laboriosam fuga
+			rerum labore inventore corporis repellendus alias unde praesentium,
+			accusamus molestias tenetur? Eius nihil quae omnis quibusdam ratione, quod
+			adipisci molestiae at esse voluptatum ad necessitatibus nesciunt voluptate
+			libero aperiam quas fuga. Doloremque corporis atque beatae quia, facilis
+			debitis, voluptatibus numquam autem accusamus magnam officia. Ullam nihil
+			fugit repudiandae repellendus. Nemo in eos, magnam asperiores voluptatibus
+			dolorum quos debitis vero nesciunt perspiciatis, ipsa harum nostrum ex
+			rerum. Libero quisquam at facere nisi consectetur nobis voluptatum, in
+			unde! Eos quaerat dolor consectetur incidunt debitis mollitia veritatis,
+			quia perspiciatis aperiam amet nam porro facere quas nisi totam eaque aut?
+			Quae autem fugiat aspernatur voluptatum dicta, nobis accusamus
+			necessitatibus inventore! Rem nesciunt eligendi sed tempora fuga omnis
+			reiciendis perferendis at, quam consectetur ex repellat facilis maxime
+			nulla voluptatum debitis dolorum expedita cumque saepe illum excepturi,
+			inventore eum exercitationem. Magnam voluptate nam nobis quisquam expedita
+			nisi ut alias inventore. Adipisci aliquam ad vitae totam, et mollitia
+			recusandae? Esse, dolore. Vero animi magnam obcaecati consectetur porro,
+			maiores deserunt.
+		</div>
+		<div class="text-base/8">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, a quae
+			assumenda, deleniti consectetur animi ex nemo blanditiis quia quaerat
+			vitae alias beatae provident saepe quas? Nobis esse nostrum aspernatur
+			consectetur perspiciatis tempora, quia hic reprehenderit laboriosam fuga
+			rerum labore inventore corporis repellendus alias unde praesentium,
+			accusamus molestias tenetur? Eius nihil quae omnis quibusdam ratione, quod
+			adipisci molestiae at esse voluptatum ad necessitatibus nesciunt voluptate
+			libero aperiam quas fuga. Doloremque corporis atque beatae quia, facilis
+			debitis, voluptatibus numquam autem accusamus magnam officia. Ullam nihil
+			fugit repudiandae repellendus. Nemo in eos, magnam asperiores voluptatibus
+			dolorum quos debitis vero nesciunt perspiciatis, ipsa harum nostrum ex
+			rerum. Libero quisquam at facere nisi consectetur nobis voluptatum, in
+			unde! Eos quaerat dolor consectetur incidunt debitis mollitia veritatis,
+			quia perspiciatis aperiam amet nam porro facere quas nisi totam eaque aut?
+			Quae autem fugiat aspernatur voluptatum dicta, nobis accusamus
+			necessitatibus inventore! Rem nesciunt eligendi sed tempora fuga omnis
+			reiciendis perferendis at, quam consectetur ex repellat facilis maxime
+			nulla voluptatum debitis dolorum expedita cumque saepe illum excepturi,
+			inventore eum exercitationem. Magnam voluptate nam nobis quisquam expedita
+			nisi ut alias inventore. Adipisci aliquam ad vitae totam, et mollitia
+			recusandae? Esse, dolore. Vero animi magnam obcaecati consectetur porro,
+			maiores deserunt.
+		</div> -->
+		<!-- font-color -->
+		<!-- <div class="text-cyan-500">hello world</div> -->
+		<!-- font-weight -->
+		<!-- <div class="font-black">font-extrablack</div> -->
+		<!-- font-style -->
+		<!-- <div class="italic">font-style</div> -->
+		<!-- text-decoration -->
+		<!-- <div class="underline">underline</div>
+		<div class="overline">overline</div>
+		<div class="line-through decoration-amber-500">line-through</div> -->
+		<!-- letter-spacing -->
+		<!-- <div class="tracking-tighter">letter spacing</div>
+		<div class="tracking-wide">letter spacing</div>
+		<div class="tracking-widest">letter spacing</div> -->
+		<!-- text-align -->
+		<!-- <div class="text-center">text-center</div>
+		<div class="text-right">text-right</div>
+		<div class="text-left">text-left</div> -->
+
+		<!-- Materi widht dan height -->
+		<!-- <div class="bg-red-500 w-30">widht</div>
+		 <div class="bg-blue-500 h-30 w-1/4">height</div>
+
+		 <div class="bg-green-500 w-md">widht md</div>
+
+		 <div class="bg-purple-500 min-w-180">min-widht</div>
+		 <div class="bg-pink-500 max-w-180">max-widht</div> -->
+
+		<!-- Materi Background -->
+		<!-- <div class="bg-red-500">background color</div> -->
+		<!-- <div class="w-[200px] h-[200px] bg-[url(https://images.unsplash.com/photo-1738599778390-af77d7cf10e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8)]">situasi kota</div>
+		  <div class="w-[200px] h-[200px] bg-[url(https://images.unsplash.com/photo-1738599778390-af77d7cf10e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8)] bg-center">situasi kota bg-center</div>
+		  <div class="w-[200px] h-[200px] bg-[url(https://images.unsplash.com/photo-1738599778390-af77d7cf10e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8)] bg-right-bottom">situasi kota bg-right-bottom</div>
+		  <div class="w-[200px] h-[200px] bg-[url(https://images.unsplash.com/photo-1738599778390-af77d7cf10e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8)] bg-cover">situasi kota </div>
+		  <div class="w-[200px] h-[200px] bg-[url(https://images.unsplash.com/photo-1738599778390-af77d7cf10e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8)] bg-contain bg-no-repeat">situasi kota </div> -->
+		<!-- <div class="w-[200px] h-[200px] bg-linear-90 from-purple-500 to-pink-500">
+			background gradient
+		</div>
+
+		<div
+			class="size-18 rounded-full bg-radial from-pink-400 from-40% to-fuchsia-700"></div>
+		<div
+			class="size-18 rounded-full bg-radial-[at_50%_75%] from-sky-200 via-blue-400 to-indigo-900 to-90%"></div>
+		<div
+			class="size-18 rounded-full bg-radial-[at_25%_25%] from-white to-zinc-900 to-75%"></div> -->
+
+		<!-- Materi Borders -->
+		<!-- <button class="bg-blue-500 text-white px-4 py-2 m-4 w-[100px] h-[100px] rounded-full">Submit</button>
+
+		<div class="border-8 border-red-500 border-dotted">border test</div>
+
+		<div class="border-4 border-red-500 border-dotted outline-2 outline-green-500 my-4 outline-dashed outline-offset-2">border test</div> -->
+
+		<!-- Materi shadow -->
+		 <!-- <button class="text-black px-4 py-2 rounded-md m-10 inset-shadow-sm">Submit</button>
+		 <button class="text-black px-4 py-2 rounded-md m-10 shadow-sm">Submit</button>
+		 <button class="text-black px-4 py-2 rounded-md m-10 shadow-3xl">Submit</button> -->
+
+		 <!-- Materi Opacity -->
+		 <!-- <div class="bg-green-500 text-white p-4 w-[200px] m-10 opacity-50">Opacity</div>
+		 <div class="bg-green-500/50 border border-red-500/50 text-white p-4 w-[200px] m-10 ">Opacity hanya di background</div>
+		 <div class="bg-green-500 text-white p-4 w-[200px] m-10 opacity-(--my-opacity)">Opacity</div> -->
+
+		 <!-- Materi cursor dan select -->
+		  <!-- <div class="bg-red-500 w-[100px] px-4 py-2 m-4 cursor-pointer">cursor-pointer</div>
+		  <div class="bg-red-500 w-[100px] px-4 py-2 m-4 cursor-wait">cursor-wait</div>
+		  <div class="bg-red-500 w-[100px] px-4 py-2 m-4 cursor-not-allowed">cursor-not-allowed</div>
+		  <div class="bg-red-500 w-[100px] px-4 py-2 m-4 cursor-progress">cursor-progress</div>
+
+		  <div class="select-none">hello there</div>
+		  <div class="select-all">hello there</div>
+		  <div class="select-text">hello there</div>
+		  <div class="select-auto">hello there</div> -->
+
+		  <!-- Materi Pseudoclass -->
+		   <!-- <button class="bg-amber-500 text-white px-4 py-2 rounded-md m-10 hover:opacity-80 hover:bg-red-500">hover me</button>
+		   <button class="bg-amber-500 text-white px-4 py-2 rounded-md m-10 active:opacity-80 active:bg-red-500">active me</button>
+		   <button class="bg-amber-500 text-white px-4 py-2 rounded-md m-10 focus:opacity-80 focus:bg-red-500">focus me</button>
+
+		   <ul>
+			<li class="first:bg-slate-800 first:text-white">item 1</li>
+			<li class="first:bg-slate-800 odd:text-red-500 even:text-blue-500">item 2</li>
+			<li class="first:bg-slate-800 odd:text-red-500 even:text-blue-500">item 3</li>
+			<li class="first:bg-slate-800 odd:text-red-500 even:text-blue-500">item 4</li>
+			<li class="first:bg-slate-800 odd:text-red-500 even:text-blue-500">item 5</li>
+			<li class="first:bg-slate-800 odd:text-red-500 even:text-blue-500">item 6</li>
+		   </ul>
+
+		   <button  class="disabled:cursor-not-allowed disabled:opacity-50 bg-red-500 rounded-md text-white px-4 py-2">Submit</button>
+		 
+
+		   <div class="group">
+			<h1 class="text-3xl group-hover:bg-slate-100 font-semibold text-black">Nama : Budiman Suryono</h1>
+			<p class="text-sm font-light text-slate-400">Lahir di banten 1974, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque recusandae labore fugit perspiciatis molestiae, pariatur obcaecati incidunt minus, id tempore dignissimos! Molestiae nihil incidunt expedita illum pariatur ut ad sint. Illo id animi perspiciatis unde nostrum, harum, aut dolor saepe nisi, commodi magnam reiciendis veritatis numquam enim. A, necessitatibus quia!</p>
+			<button class="text-white px-4 py-2 bg-green-500 cursor-pointer">hover me</button>
+		   </div> -->
+
+		   <!-- Materi Responsif desain : breakpoint dan media query -->
+			<!-- <div class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-3xl font-bold">Responsif desain</div>
+			<div class="text-xl sm:text-red-500 md:text-blue-500 lg:text-green-500 xl:text-purple-500">Responsif desain</div>
+
+			<div class="hidden sm:max-lg:flex font-bold">Hello there</div>
+			<div class="@container w-1/2">
+				<div class="hidden @sm:@max-lg:flex">Hello there</div>
+			</div> -->
+
+			<!-- Materi columns -->
+			 <!-- <div class="columns-2 gap-10">
+				<div>hello Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aspernatur et exercitationem accusantium ullam blanditiis, maiores, esse, obcaecati excepturi tempore a sed quia? Vitae delectus dolores sunt sed, eaque maiores? Unde quam dicta suscipit laboriosam, reiciendis voluptatem, ipsam distinctio omnis atque dolorum non quasi repellendus aut accusamus incidunt consectetur autem.</div>
+				<div>hai Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, debitis aspernatur praesentium dicta, ab sunt totam nobis quae, consequuntur iure magni odit placeat? Eligendi optio voluptatum sed molestiae maiores tenetur esse officiis autem. Labore officia nesciunt sapiente, dolorum voluptates consequatur nulla quae adipisci velit quibusdam laboriosam mollitia ipsa, ea porro!</div>
+			 </div> -->
+
+			 <!-- Materi flexbox -->
+			  <!-- <div class="flex flex-col-reverse">
+				<div class="bg-red-500 text-white">content 1</div>
+				<div class="bg-blue-500 text-white">content 2</div>
+				<div class="bg-green-500 text-white">content 3</div>
+			  </div>
+			  <div class="flex flex-col my-4">
+				<div class="bg-red-500 text-white order-2">content 1</div>
+				<div class="bg-blue-500 text-white order-3">content 2</div>
+				<div class="bg-green-500 text-white order-1">content 3</div>
+			  </div>
+			  <div class="flex flex-row my-4">
+				<div class="bg-red-500 text-white ">content 1</div>
+				<div class="bg-blue-500 text-white grow">content 2</div>
+				<div class="bg-green-500 text-white ">content 3</div>
+			  </div>
+			  <div class="flex flex-row my-4">
+				<div class="bg-red-500 text-white w-[800px] shrink">content 1</div>
+				<div class="bg-blue-500 text-white w-[800px] shrink-0">content 2</div>
+				<div class="bg-green-500 text-white w-[800px] shrink">content 3</div>
+			  </div>
+			  <div class="flex flex-row my-4 justify-evenly h-[600px] bg-slate-300 items">
+				<div class="bg-red-500 text-white h-12">content 1</div>
+				<div class="bg-blue-500 text-white h-12">content 2</div>
+				<div class="bg-green-500 text-white h-12">content 3</div>
+			  </div>
+			  <div class="flex flex-wrap flex-row my-4   bg-slate-300 items">
+				<div class="bg-red-500 text-white h-12 w-2/3">content 1</div>
+				<div class="bg-blue-500 text-white h-12 w-2/3">content 2</div>
+				<div class="bg-green-500 text-white h-12 w-1/3">content 3</div>
+			  </div> -->
+
+			  <!-- Materi Grid -->
+			<!-- <div class="m-10 grid grid-cols-5 gap-4 grid-flow-dense">
+				<div class="bg-sky-500 text-white p-4 rounded-lg col-span-2">content 1</div>
+				<div class="bg-sky-500 text-white p-4 rounded-lg col-span-3">content 2</div>
+				<div class="bg-sky-500 text-white p-4 rounded-lg">content 3</div>
+				<div class="bg-sky-500 text-white p-4 rounded-lg col-span-3">content 4</div>
+				<div class="bg-sky-500 text-white p-4 rounded-lg col-span-3">content 5</div>
+				<div class="bg-sky-500 text-white p-4 rounded-lg">content 6</div>
+			</div>
+			<div class="m-10 grid grid-rows-3 grid-flow-col gap-4">
+				<div class="bg-sky-500 text-white p-4 rounded-lg row-span-2">content 1</div>
+				<div class="bg-sky-500 text-white p-4 rounded-lg ">content 2</div>
+				<div class="bg-sky-500 text-white p-4 rounded-lg ">content 3</div>
+				<div class="bg-sky-500 text-white p-4 rounded-lg ">content 4</div>
+				<div class="bg-sky-500 text-white p-4 rounded-lg ">content 5</div>
+				<div class="bg-sky-500 text-white p-4 rounded-lg ">content 6</div>
+				<div class="bg-sky-500 text-white p-4 rounded-lg row-span-3">content 7</div>
+			</div> -->
+
+			<!-- Materi Transition -->
+			 <!-- <button class="bg-red-500 px-4 py-2 cursor-pointer text-white rounded-lg m-10 hover:opacity-50 transition-opacity ease-in-out duration-700 delay-150">Hover me</button> -->
+
+			 <!-- Materi Transform -->
+			  <!-- <button class="bg-green-500  focus:translate-x-[100px] transition duration-1000 ease-in-out text-white m-8 px-4 py-2 rounded-lg">pindah</button>
+			  <button class="bg-green-500  focus:skew-x-[45deg] transition duration-1000 ease-in-out text-white m-8 px-4 py-2 rounded-lg">skew</button>
+			  <button class="bg-green-500  hover:scale-150 transition duration-1000 ease-in-out text-white m-8 px-4 py-2 rounded-lg">scale</button>
+			  <button class="bg-green-500  focus:rotate-[360deg] transition duration-1000 ease-in-out text-white m-8 px-4 py-2 rounded-lg">rotate</button>
+			  <div>
+				  <button class="bg-green-500 focus:translate-x-[300px]  focus:rotate-[360deg]  duration-1000 ease-in-out text-white m-8 px-4 py-2 rounded-lg">rotate pindah</button>
+			  </div> -->
+
+			  <!-- Materi Animation -->
+			   <button class="bg-green-500 px-4 py-2 text-white animate-spin m-20">animate-spin</button>
+			   <button class="bg-green-500 px-4 py-2 text-white animate-pulse m-20">animate-pulse</button>
+			   <button class="bg-green-500 px-4 py-2 text-white animate-ping m-20">animate-ping</button>
+			   <button class="bg-green-500 px-4 py-2 text-white animate-bounce m-20">animate-bounce</button>
+			   <button class="bg-green-500 px-4 py-2 text-white animate-wiggle m-20">animate-wiggle</button>
+
+
+
+
+
+	</body>
+</html>
